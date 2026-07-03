@@ -350,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170598960}
   - component: {fileID: 1170598959}
+  - component: {fileID: 1170598961}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -391,6 +392,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170598961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170598958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 522aeea24c3d5f94db6c3a30286858f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RocketSpawner
+  warningPrefab: {fileID: 1484942907618040723, guid: 702af1577661a1f42bd686f45718d408, type: 3}
+  rocketPrefab: {fileID: 584832669636949467, guid: 25dc9bef03dcbf8418e9463add366cad, type: 3}
+  playerTransform: {fileID: 1976059096}
+  spawnCooldown: 5
+  initialWarningTime: 3
+  minWarningTime: 0.8
+  difficultyFactor: 0.02
+  paddingX: 1.5
 --- !u!1 &1976059093
 GameObject:
   m_ObjectHideFlags: 0
